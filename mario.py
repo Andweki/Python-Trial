@@ -1,16 +1,12 @@
-def main ():
-    print_square(3)
+def main():
+    height = int(input("Height?: "))
+    pyramid(height)
 
-#2 dimensional printing
-def print_square (size):
-    #for each row in square
-    for i in range(size):
-        #for each brick in row
-        #for j in range(size):
-            #print brick
-            print ("#" * size)
+def pyramid(n):
+    for i in range(1, n + 1):
+        spaces = n - i
+        print(" " * spaces + "#" * i)
 
-
-main()
-
-        
+if __name__ == "__main__":
+    main()
+    
